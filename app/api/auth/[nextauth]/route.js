@@ -1,8 +1,5 @@
- import { GET, POST } from '@/auth'; // '@/' ist normalerweise ein Alias für das Projekt-Root
-    import config from '../../../../auth.config'; // Importiere unsere Konfiguration
+import NextAuth from 'next-auth';
+import authConfig from '@/auth.config'; // Korrekter Import der Konfiguration
 
-    // Exportiere die GET und POST Handler
-    // Diese Zeilen sorgen dafür, dass Routen wie /api/auth/signin, /api/auth/signout,
-    // /api/auth/session etc. automatisch von next-auth verwaltet werden.
-    export { GET, POST };
-    ```
+// Für next-auth v4 wird NextAuth direkt mit der Konfiguration exportiert.
+export default NextAuth(authConfig);
