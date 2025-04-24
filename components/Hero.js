@@ -65,13 +65,25 @@ export default function Hero() {
           mit Pfotenliebe.
         </p>
 
-        {/* Button */}
-        <button
-          onClick={handleClick}
-          className="bg-amber-600 text-white py-2 px-6 rounded-xl hover:bg-amber-700 transition duration-300"
-        >
-          Be Part of it
-        </button>
+        {/* Buttons nebeneinander */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={handleClick}
+            className="bg-amber-600 text-white py-2 px-6 rounded-xl hover:bg-amber-700 transition duration-300"
+          >
+            <span dangerouslySetInnerHTML={{ __html: "<box-icon type='solid' name='user-plus'></box-icon>" }} />
+            Be Part of it
+          </button>
+
+          <button
+            onClick={() => setShowLogin(true)} // ändert den showLogiin State auf true, damit LogIn angezeigt wird
+            className="bg-white hover:bg-gray-100 text-[#b83c3c] font-semibold py-2 px-6 rounded-xl border border-[#b83c3c]"
+          >
+            Einloggen
+          </button>
+        </div>
+
+        {showLogin && <Login onClose={() => setShowLogin(false)} />}
       </div>
 
       {/* Über die Seite */}
