@@ -39,7 +39,7 @@ export default function MiniForum() {
   return (
     <div className="mt-12 bg-[#fffaf5] border-2 border-[#b83c3c] p-6 rounded-2xl shadow-md">
       <h3 className="text-2xl font-bold text-[#b83c3c] mb-4 font-[Inter]">
-        🐾 Mini-Forum
+        Mini-Forum
       </h3>
 
       <input
