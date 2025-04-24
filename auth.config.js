@@ -51,7 +51,7 @@ export default {
         })
     ],
     pages: { // Korrekte Schreibweise: pages
-        signIn: '/login', // Korrekte Schreibweise: signIn
+        signIn: '/login',// Korrekte Schreibweise: signIn
     },
     // Füge hier ggf. weitere Optionen wie callbacks, secret etc. hinzu
     // Beispiel: session: { strategy: "jwt" },
