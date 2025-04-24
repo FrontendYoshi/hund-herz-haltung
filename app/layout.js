@@ -1,6 +1,8 @@
 import SessionWrapper from "@/components/Sessionwrapper";
 import "./globals.css";
 import Head from "next/head";
+import "boxicons/css/boxicons.min.css";
+
 
 export const metadata = {
   title: "Hund Herz Haltung",

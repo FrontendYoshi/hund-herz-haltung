@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import "boxicons/css/boxicons.min.css"; // Importiere Boxicons
 
 export default function MiniForum() {
   const [comments, setComments] = useState([
@@ -60,9 +61,9 @@ export default function MiniForum() {
 
       <button
         onClick={handleAddComment}
-        className="bg-[#b83c3c] hover:bg-[#992c2c] text-white font-semibold py-2 px-6 rounded-xl transition"
+        className="bg-[#b83c3c] hover:bg-[#992c2c] text-white font-semibold py-2 px-6 rounded-xl transition flex items-center justify-center"
       >
-        Kommentar absenden
+        <i className="bx bx-comment-add mr-2"></i> Kommentar absenden
       </button>
 
       <div className="mt-8">
@@ -78,6 +79,14 @@ export default function MiniForum() {
                 <strong className="text-[#b83c3c]">{comment.name}:</strong>{" "}
                 <span className="text-[#333333]">{comment.text}</span>
               </p>
+              <div className="mt-2 flex space-x-2">
+                <button className="text-[#b83c3c] hover:text-[#992c2c]">
+                  <i className="bx bx-edit"></i> Bearbeiten
+                </button>
+                <button className="text-[#b83c3c] hover:text-[#992c2c]">
+                  <i className="bx bx-trash"></i> Löschen
+                </button>
+              </div>
             </li>
           ))}
         </ul>

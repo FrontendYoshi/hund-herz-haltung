@@ -59,7 +59,7 @@ export default function Login({ onClose }) {
 
   // Das JSX für das Formular
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4 py-10">
+    <div className="fixed inset-0 bg-amber-200 bg-opacity-50 z-50 flex items-center justify-center px-4 py-10">
       <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md border-4 border-[#b83c3c] font-[Inter]">
         {/* Schließen-X im roten Rahmen oben rechts */}
         <button
