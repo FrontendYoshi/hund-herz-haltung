@@ -1,2 +1,8 @@
-import{GET, POST} from "@/auth"; // Handler aus auth.js Datei
-export{GET, POST}; // exportiert die Handler, sorgt dafür. dass Routen wie api/auth/signout usw automatisch von next-auth verwaltet wird
+ import { GET, POST } from '@/auth'; // '@/' ist normalerweise ein Alias für das Projekt-Root
+    import config from '../../../../auth.config'; // Importiere unsere Konfiguration
+
+    // Exportiere die GET und POST Handler
+    // Diese Zeilen sorgen dafür, dass Routen wie /api/auth/signin, /api/auth/signout,
+    // /api/auth/session etc. automatisch von next-auth verwaltet werden.
+    export { GET, POST };
+    ```

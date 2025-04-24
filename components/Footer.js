@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear(); // holt das aktuelle Jahr damit ich es automatisch im Copyright anzeigen kann
 
   return (
     <footer className="bg-[#3c2f2f] text-[#fefae0] py-10">
@@ -41,8 +41,8 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-[#ffd166] mb-3">Folge uns</h3>
             <ul className="space-y-2">
-              <li><a href="https://instagram.com/hundherzhaltung" target="_blank" className="hover:text-[#fab1a0]">Instagram</a></li>
-              <li><a href="https://twitter.com/hundherzhaltung" target="_blank" className="hover:text-[#fab1a0]">Twitter</a></li>
+              <li><Link href="https://instagram.com/hundherzhaltung" target="_blank" className="hover:text-[#fab1a0]">Instagram</Link></li>
+              <li><Link href="https://twitter.com/hundherzhaltung" target="_blank" className="hover:text-[#fab1a0]">Twitter</Link></li>
             </ul>
           </div>
 

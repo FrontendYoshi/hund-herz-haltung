@@ -3,14 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import AuthButtons from "./AuthButton";
 import Button from "./Button";
-
-
-
+import Login from "./Login";
+import { useState } from "react";
 
 export default function Hero() {
   const handleClick = () => {
-    alert("Super! Du willst mitmachen - wir freuen uns!");
+    alert("Abonniere unseren Newsletter und verpasse nie mehr etwas!!");
   };
+
+  const [showLogin, setShowLogin] = useState(false); //tate, der speichert, ob das Login-Modal angezeigt wird (true) oder nicht (false).
+
 
   return (
     <div className="bg-amber-200 text-black py-16 px-4 sm:px-8">
@@ -29,18 +31,21 @@ export default function Hero() {
         <ul className="flex space-x-6">
           <li className="text-lg text-gray-800 hover:text-gray-500 transition duration-200">
             <Link href="/community" className="flex items-center">
+              <span dangerouslySetInnerHTML={{ __html: "<box-icon type='solid' name='heart'></box-icon>" }} />
               Community
             </Link>
           </li>
           <li className="text-lg text-gray-800 hover:text-gray-500 transition duration-200">
             <Link href="/haltung" className="flex items-center">
+              <span dangerouslySetInnerHTML={{ __html: "<box-icon name='hot' type='solid'></box-icon>" }} />
               Haltung
             </Link>
           </li>
           <li className="text-lg text-gray-800 hover:text-gray-500 transition duration-200">
             <Link href="/kontakt" className="flex items-center">
+              <span dangerouslySetInnerHTML={{ __html: "<box-icon type='solid' name='megaphone'></box-icon>" }} />
               Kontakt
-              </Link>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -69,7 +74,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={handleClick}
-            className="bg-amber-600 text-white py-2 px-6 rounded-xl hover:bg-amber-700 transition duration-300"
+            className="bg-amber-600  hover:bg-gray-100 text-white font-semibold py-2 px-6 rounded-xl border border-[#b83c3c]"
           >
             <span dangerouslySetInnerHTML={{ __html: "<box-icon type='solid' name='user-plus'></box-icon>" }} />
             Be Part of it
@@ -77,7 +82,7 @@ export default function Hero() {
 
           <button
             onClick={() => setShowLogin(true)} // ändert den showLogiin State auf true, damit LogIn angezeigt wird
-            className="bg-white hover:bg-gray-100 text-[#b83c3c] font-semibold py-2 px-6 rounded-xl border border-[#b83c3c]"
+            className="bg-amber-600  hover:bg-gray-100 text-white font-semibold py-2 px-6 rounded-xl border border-[#b83c3c]"
           >
             Einloggen
           </button>

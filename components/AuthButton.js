@@ -1,16 +1,16 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react"; // useSession sagt ob jmd eingeloggt ist oder nicht, signIn ruft Login auf, signOut loggt aus
 import Login from "./Login";
 import Button from "./Button";
 
 export default function AuthButtons() {
-  const { data: session, status } = useSession();
-
+  const { data: session, status } = useSession(); // holt Infos über Login-Status session enthält Name,Email usw  status ist entweder "loading", "authenticated" oder "unauthenticated"
+// Wenn die Session noch geladen wird
   if (status === "loading") {
     return <p className="text-amber-600 font-medium">Prüfe Login...</p>;
   }
-
+// Wenn jmd eingeloggt ist
   if (status === "authenticated") {
     return (
       <div className="bg-[#fffaf5] border border-[#f4b400] rounded-xl p-4 shadow-sm">
@@ -28,7 +28,7 @@ export default function AuthButtons() {
       </div>
     );
   }
-
+  // Wenn Niemand eingeloggt ist
   return (
     <div className="bg-[#fffaf5] border border-[#f4b400] rounded-xl p-4 shadow-sm">
       <p className="text-gray-800 mb-2"> Nicht eingeloggt</p>
