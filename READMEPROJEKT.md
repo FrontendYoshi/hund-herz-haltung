@@ -83,5 +83,8 @@ Ordner werden klein geschrieben und kommen immer in App (Bsp. Unterseiten) compo
 
 einloggen fixen ../../.... neben be part of it nein login mit button
 
+
+auth bsp anschauen um Nutzer bei login richtig weiter zu leiten
+
 Zusammenarbeit an Projekten in GitHub:
 GitHub geforkte Projekte: GitHub Repo öffnen -> Pull Request -> Veränderung auswählen -> merge 
