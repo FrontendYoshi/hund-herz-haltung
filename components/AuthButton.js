@@ -1,8 +1,5 @@
 "use client";
-
 import { useSession, signIn, signOut } from "next-auth/react"; // useSession sagt ob jmd eingeloggt ist oder nicht, signIn ruft Login auf, signOut loggt aus
-import Login from "./Login";
-import Button from "./Button";
 
 export default function AuthButtons() {
   const { data: session, status } = useSession(); // holt Infos über Login-Status session enthält Name,Email usw  status ist entweder "loading", "authenticated" oder "unauthenticated"
@@ -33,7 +30,7 @@ export default function AuthButtons() {
     <div className="bg-[#fffaf5] border border-[#f4b400] rounded-xl p-4 shadow-sm">
       <p className="text-gray-800 mb-2"> Nicht eingeloggt</p>
       <button
-        onClick={() => signIn("credentials", { callbackUrl: "/geschützt" })}
+        onClick={() => signIn()}
         className="bg-[#f4b400] hover:bg-[#e0a800] text-black font-semibold py-2 px-4 rounded-xl transition"
       >
        Einloggen

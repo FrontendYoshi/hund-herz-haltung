@@ -88,3 +88,6 @@ auth bsp anschauen um Nutzer bei login richtig weiter zu leiten
 
 Zusammenarbeit an Projekten
 GitHub geforkte Projekte: GitHub Repo öffnen -> Pull Request -> Veränderung auswählen -> merge 
+
+Wenn ich was in VSC gelöscht habe und es im Commit angezeigt wird: 
+rechte Maustaste discard changes -> stellt datei wieder her

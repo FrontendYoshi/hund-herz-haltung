@@ -98,10 +98,7 @@ export default function Hero() {
       <section className="mt-12 text-center">
 
         <h2 className="text-3xl font-semibold text-gray-800 mb-4">Worum geht&apos;s?</h2>
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-          Worum geht's?
-        </h2>
-
+        
         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
           Wir sind queere, linke Hundemenschen aus Berlin, die sich vernetzen,
           austauschen und gemeinsam aktiv sind - für mehr Sichtbarkeit,

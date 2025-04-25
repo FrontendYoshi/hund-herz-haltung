@@ -10,7 +10,8 @@ export default function LoginPage() {
       <p className="bg-amber-200 text-lg text-gray-700 mb-10 text-center max-w-xl font-[Inter]">
         Bitte logge dich ein, um auf unsere geschützten Inhalte zugreifen zu können.
       </p>
-      <Login />
+      <Login/>
+         
     </div>
   );
 }

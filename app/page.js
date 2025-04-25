@@ -12,7 +12,11 @@ export default function Home() {
   return (
     <main className="bg-amber-200 text-black py-16 px-4 sm:px-8">
       <Hero />
-      {/* Navigation*/}
+      {/* Login/Logout Buttons an den State an*/}
+      <AuthButtons/>
+      {/* Footer */}
+      <Footer/>
+       {/* Navigation*/}
       <div className="mt-10 flex justify-center gap-6 text-sm text-gray-700 underline">
         <Link href="../components/Login">Auf zur Login-Seite</Link>
         <br />
