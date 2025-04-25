@@ -51,7 +51,7 @@ export default {
         })
     ],
     pages: { // Korrekte Schreibweise: pages
-        signIn: '/login', // Korrekte Schreibweise: signIn
+        signIn: '/login',// Korrekte Schreibweise: signIn
     },
     callbacks: {
         async redirect({ url, baseUrl }) {

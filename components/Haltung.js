@@ -22,9 +22,10 @@ export default function Haltung() {
       <section className="mb-12">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-[#f77f00] mb-2">
-              Solidarität
+            <h2 className="text-xl font-semibold text-[#f77f00] mb-2 flex items-center">
+            <i className="bx bxs-fist mr-2 text-xl text-[#b83c3c]"></i>              Solidarität
             </h2>
+
             <p className="text-gray-700">
               Wir unterstützen uns gegenseitig, hören zu und handeln gemeinsam –
               auch über Hundethemen hinaus.
@@ -33,6 +34,7 @@ export default function Haltung() {
 
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-[#f77f00] mb-2">
+              <i className="bx bxs-party text-[#f77f00] mr-2 text-2xl"></i>
               Queerness feiern
             </h2>
             <p className="text-gray-700">
@@ -43,6 +45,7 @@ export default function Haltung() {
 
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-[#f77f00] mb-2">
+              <i className="bx bxs-megaphone text-[#f77f00] mr-2 text-2xl"></i>
               Politisch sein
             </h2>
             <p className="text-gray-700">
@@ -53,6 +56,7 @@ export default function Haltung() {
 
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-[#f77f00] mb-2">
+              <i className="bx bxs-shield-plus text-[#f77f00] mr-2 text-2xl"></i>
               Awareness & Schutz
             </h2>
             <p className="text-gray-700">
