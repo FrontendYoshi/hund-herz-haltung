@@ -120,7 +120,7 @@ export default function Hero() {
       
       <section className="mt-12 text-center">
         <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-          Worum geht es?
+          hi
         </h2>
 
         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
