@@ -1,6 +1,7 @@
 import NextAuth from 'next-auth'
+import { getServerSession } from "next-auth/next" // Import für getServerSession hinzufügen
 import authConfig from './auth.config' // Importiere die separate Konfigurationsdatei
-import { GetServerSidePropsContext, NextApiRequest, NextApiResponse } from "next"; // Typen für getServerSession
+import { GetServerSidePropsContext, NextApiRequest, NextApiResponse } from "next"; // Typen für getServerSession (wird jetzt nicht mehr direkt verwendet, aber lassen wir es vorerst)
 
 // Initialisiere NextAuth mit der Konfiguration
 // Dies ist die Instanz, die in API-Routen verwendet wird.
@@ -10,7 +11,7 @@ export default NextAuth(authConfig);
 // Exportiere eine Funktion, um die Session serverseitig abzurufen (für Middleware oder getServerSideProps)
 // Hinweis: Für App Router wäre `auth()` aus `@auth` (v5) üblicher, aber für v4 + Pages/API ist dies ein Weg.
 // Für die Middleware benötigen wir eigentlich nur die Konfiguration, aber exportieren wir `getServerSession` für Konsistenz.
-export function auth(...args: [GetServerSidePropsContext["req"], GetServerSidePropsContext["res"]] | [NextApiRequest, NextApiResponse] | []) {
+export function auth(...args) {
   return getServerSession(...args, authConfig)
 }
 

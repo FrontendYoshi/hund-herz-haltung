@@ -53,7 +53,14 @@ export default {
     pages: { // Korrekte Schreibweise: pages
         signIn: '/login',// Korrekte Schreibweise: signIn
     },
-    // Füge hier ggf. weitere Optionen wie callbacks, secret etc. hinzu
+    callbacks: {
+        async redirect({ url, baseUrl }) {
+            // Nach erfolgreichem Login immer zur Homepage weiterleiten.
+            // baseUrl ist die Basis-URL deiner Anwendung (z.B. http://localhost:3000)
+            return baseUrl;
+        }
+    },
+    // Füge hier ggf. weitere Optionen wie session, secret etc. hinzu
     // Beispiel: session: { strategy: "jwt" },
     // secret: process.env.AUTH_SECRET, // Wichtig für Produktion
 };
