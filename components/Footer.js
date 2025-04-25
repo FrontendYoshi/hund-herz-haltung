@@ -8,15 +8,17 @@ export default function Footer() {
     <footer className="bg-[#3c2f2f] text-[#fefae0] py-10">
       <div className="max-w-6xl mx-auto px-6">
         {/* Logo */}
-        <div className="flex items-center mb-8">
-          <Image
-            src="/images/hund-herz-haltung.png"
-            alt="Logo Hund, Herz, Haltung"
-            width={40}
-            height={40}
+        <div className="flex items-center space-x-4">
+          <img
+            src="/Images/Logo.png"
+            alt="Logo: Hund mit Halstuch Antifa"
+            width={60}
+            height={60}
             className="rounded-full"
           />
-          <span className="ml-3 text-2xl font-bold tracking-wide">Hund, Herz, Haltung</span>
+          <span className="text-3xl font-bold text-gray-900">
+            Hund, Herz, Haltung
+          </span>
         </div>
 
         {/* Grid-Bereich */}
@@ -46,24 +48,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-[#ffd166] mb-3">Newsletter</h3>
-            <p className="mb-2">Updates zu Spaziergängen & Aktionen</p>
-            <form action="#" method="POST" className="space-y-2">
-              <input
-                type="email"
-                placeholder="E-Mail-Adresse"
-                className="w-full px-3 py-2 rounded-md bg-[#fffaf0] text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#e07a5f]"
-              />
-              <button
-                type="submit"
-                className="w-full bg-[#e07a5f] hover:bg-[#d94c3d] text-white py-2 px-4 rounded-md font-semibold transition"
-              >
-                Abonnieren
-              </button>
-            </form>
-          </div>
-        </div>
+           </div>
 
         {/* Footer-Zeile */}
         <div className="text-center text-sm text-[#fefae0]/70">

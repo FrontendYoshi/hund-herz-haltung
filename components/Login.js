@@ -123,17 +123,6 @@ export default function Login({ onClose }) {
             {/*Wenn ein Fehler da ist wird er hier angezeigt*/}
             {/* Sende-Button */}
             <button
-              type="submit"
-              disabled={isLoading}
-              className="w-full p-3 bg-[#b83c3c] text-white rounded-xl hover:bg-[#992c2c] font-bold focus:outline-none focus:ring-2 focus:ring-[#f4b400]"
-            >
-              {isLoading ? "Melde an..." : "Anmelden"}
-              {/* Zeige Ladezustand an */}
-            </button>
-            {/* Abstand zwischen den Buttons */}
-            <div style={{ marginTop: "15px" }}></div>
-            {/* SignIn-Button */}
-            <button
               type="button" // WICHTIG: type "button", damit das Formular nicht abgeschickt wird
               onClick={() => signIn("google")} // Rufe signIn mit "google" auf
               className="w-full p-3 bg-[#b83c3c] text-white rounded-xl hover:bg-[#992c2c] font-bold focus:outline-none focus:ring-2 focus:ring-[#f4b400]"

@@ -8,11 +8,11 @@ import { useState } from "react";
 
 export default function Hero() {
   const handleClick = () => {
-    alert("Abonniere unseren Newsletter und verpasse nie mehr etwas!!");
+    alert("Abonniere unten unseren Newsletter und verpasse nie mehr etwas!!");
   };
 
   const [showLogin, setShowLogin] = useState(false); //State, der speichert, ob das Login-Modal angezeigt wird (true) oder nicht (false).
-
+  const [showNewsletter, setShowNewsletter] = useState(false)
   return (
     <div className="bg-amber-200 text-black py-16 px-4 sm:px-8">
       {/* Navigation */}
@@ -74,12 +74,12 @@ export default function Hero() {
 
         {/* Buttons nebeneinander */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            onClick={handleClick}
+        <button
+            onClick={() => setShowNewsletter(!showNewsletter)} // 👈 Ändert den State
             className="bg-black text-yellow-300 font-bold py-3 px-6 rounded-xl border border-black shadow-md hover:bg-[#333] transition duration-300 transform hover:scale-105"
           >
-            <i className="bx bxs-user-plus mr-2 text-xl text-white"></i>
-            Be Part of it
+            <i className="bx bxs-envelope mr-2 text-xl"></i> 
+            Newsletter
           </button>
 
           <button
@@ -94,11 +94,35 @@ export default function Hero() {
         {showLogin && <Login onClose={() => setShowLogin(false)} />}
       </div>
 
-      {/* Über die Seite */}
-      <section className="mt-12 text-center">
+        {/* Newsletter-Formular */}
+          {showNewsletter && (
+          <div className="mt-8 bg-white p-6 rounded-xl shadow-md max-w-md mx-auto text-left">
+            <h3 className="font-semibold text-[#ffd166] mb-3">Newsletter</h3>
+            <p className="mb-2">Updates zu Spaziergängen & Aktionen</p>
+            <form action="#" method="POST" className="space-y-2">
+              <input
+                type="email"
+                placeholder="E-Mail-Adresse"
+                className="w-full px-3 py-2 rounded-md bg-[#fffaf0] text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#e07a5f]"
+              />
+              <button
+                type="submit"
+                className="w-full bg-[#e07a5f] hover:bg-[#d94c3d] text-white py-2 px-4 rounded-md font-semibold transition"
+              >
+                Abonnieren
+              </button>
+            </form>
+          </div>
+        )}
+      
 
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4">Worum geht&apos;s?</h2>
-        
+      {/* Über die Seite */}
+      
+      <section className="mt-12 text-center">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+          Worum geht's?
+        </h2>
+
         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
           Wir sind queere, linke Hundemenschen aus Berlin, die sich vernetzen,
           austauschen und gemeinsam aktiv sind - für mehr Sichtbarkeit,
