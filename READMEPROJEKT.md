@@ -91,3 +91,6 @@ GitHub geforkte Projekte: GitHub Repo öffnen -> Pull Request -> Veränderung au
 
 Wenn ich was in VSC gelöscht habe und es im Commit angezeigt wird: 
 rechte Maustaste discard changes -> stellt datei wieder her
+
+npm run build 
+das deployed von meinem rechner
