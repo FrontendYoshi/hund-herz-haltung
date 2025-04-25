@@ -66,18 +66,21 @@ HERO-BEREICH oben:
     Möglichkeit, sich für Newsletter / Spaziergangsgruppe anzumelden
 
 🎨 Design-Stil
+
 Element	Stil
 Farben	Warme Töne (z. B. Rostrot, Senfgelb) + Kontrastfarbe (z. B. Schwarz/Weiß für politische Klarheit)
-Schriftarten	Klar und modern, z. B. „Inter“ oder „Poppins“ für Text, evtl. was Handschriftliches als Akzent
-Icons	Klare, liebevolle Icons: Hundepfote, Herz, Faust, Regenbogen, Berliner Wahrzeichen
-Layout	Grid-basiert, übersichtlich, mobilfreundlich
+Schriftarten	
+Klar und modern, z. B. „Inter“ oder „Poppins“ für Text, evtl. was Handschriftliches als Akzent
+Icons	
+Klare, liebevolle Icons: Hundepfote, Herz, Faust, Regenbogen, Berliner Wahrzeichen
+Layout	
+Grid-basiert, übersichtlich, mobilfreundlich
 
-
+Notizen
 Bilder werden IMMER in public als Ordner angelegt. 
 src="/Images/Dateiname"
 Ordner werden klein geschrieben und kommen immer in App (Bsp. Unterseiten) componenten werden immer Groß alles was im appp ordner erstellt wird klein
 
-eingabefeld, icons eingabefeld siehe kontakt aber alert im alert eingabefeld email,be part of it = leitet loginseite
 einloggen fixen ../../.... neben be part of it nein login mit button
 
 
