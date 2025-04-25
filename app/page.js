@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import MiniForum from "@/components/MiniForum";
 import Login from "@/components/Login";
 
+
 export default function Home() {
   return (
     <main className="bg-amber-200 text-black py-16 px-4 sm:px-8">

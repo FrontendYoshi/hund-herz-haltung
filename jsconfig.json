@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".", // Sagt, dass das Stammverzeichnis die Basis ist
+      "paths": {
+        "@/components/*": ["./components/*"], // Definiert: @/components/X zeigt auf ./components/X
+        "@/*": ["./*"] // Optional, aber nützlich: @/X zeigt auf ./X
+      }
+    }
+  }
