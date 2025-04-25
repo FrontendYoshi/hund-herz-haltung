@@ -86,5 +86,5 @@ einloggen fixen ../../.... neben be part of it nein login mit button
 
 auth bsp anschauen um Nutzer bei login richtig weiter zu leiten
 
-Zusammenarbeit an Projekten in GitHub:
+Zusammenarbeit an Projekten
 GitHub geforkte Projekte: GitHub Repo öffnen -> Pull Request -> Veränderung auswählen -> merge 
